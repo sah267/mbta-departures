@@ -5,10 +5,10 @@ Simple Application to display the train departure times from Boston's North and 
 ## Setting Up
 
 1. Clone this repo
-```
-cd path/to/folder
-git clone https://github.com/sah267/mbta-departures.git
-```
+    ```
+    cd path/to/folder
+    git clone https://github.com/sah267/mbta-departures.git
+    ```
 2. To start the app:
 
   * Install dependencies with `mix deps.get`
