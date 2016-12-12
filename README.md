@@ -1,19 +1,19 @@
 # MbtaDepartures
+### by Stephanie Habib
 
-To start your Phoenix app:
+Simple Application to display the train departure times from Boston's North and South Stations
+
+## Setting Up
+
+1. Clone this repo
+```
+cd path/to/folder
+git clone https://github.com/sah267/mbta-departures.git
+```
+2. To start your Phoenix app:
 
   * Install dependencies with `mix deps.get`
   * Install Node.js dependencies with `npm install`
   * Start Phoenix endpoint with `mix phoenix.server`
 
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
-
-Ready to run in production? Please [check our deployment guides](http://www.phoenixframework.org/docs/deployment).
-
-## Learn more
-
-  * Official website: http://www.phoenixframework.org/
-  * Guides: http://phoenixframework.org/docs/overview
-  * Docs: https://hexdocs.pm/phoenix
-  * Mailing list: http://groups.google.com/group/phoenix-talk
-  * Source: https://github.com/phoenixframework/phoenix
