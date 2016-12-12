@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>MBTA Departure Board</title>
+        <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <header class="header">
+                <img class="mbta-logo" src="/images/logo-mbta.png" width="100">
+                <h1 class="header-text">MBTA Departure Times</h1>
+            </header>
+
+            <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
+            <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
+
+            <main role="main">
+                <%= render @view_module, @view_template, assigns %>
+            </main>
+
+        </div> <!-- /container -->
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+                integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/react@15/dist/react.min.js"></script>
+        <script src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
+        <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
+    </body>
+</html>

@@ -1,0 +1,4 @@
+<!--Schedule Template-->
+
+<!--div where react component will render to-->
+<div id="train-table"></div>
